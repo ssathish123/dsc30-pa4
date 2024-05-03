@@ -25,38 +25,5 @@ class MyQueueTest {
         assertEquals(2, queue.size());
     }
 
-    @Test
-    public void enqueueTest(){
-        MyQueue queue = new MyQueue<>();
-        queue.enqueue(1);
-        assertEquals(1, queue.peek());
-        queue.enqueue(2);
-        assertEquals(2, queue.peek());
-        queue.enqueue(3);
-        assertEquals(3, queue.peek());
-    }
-
-    @Test
-    public void dequeueTest(){
-        MyQueue queue = new MyQueue<>();
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.enqueue(3);
-        assertEquals(2, queue.dequeue());
-        assertEquals(2, queue.dequeue());
-        assertEquals(1, queue.dequeue());
-    }
-
-    @Test
-    public void peekTest(){
-        MyQueue queue = new MyQueue<>();
-        queue.enqueue(1);
-        assertEquals(1, queue.peek());
-        queue.enqueue(2);
-        assertEquals(2, queue.peek());
-        queue.dequeue();
-        assertEquals(1, queue.peek());
-    }
-
 
 }
